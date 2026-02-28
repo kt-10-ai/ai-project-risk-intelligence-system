@@ -1,0 +1,124 @@
+INFO:     Will watch for changes in these directories: ['/Users/kathantalati/AI Project Risk Intelligence System /MAIN']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [75066] using StatReload
+INFO:     Started server process [75163]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:65126 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65128 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:65143 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65145 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:65147 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:65163 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65155 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65175 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:65176 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65178 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65189 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65192 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65195 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65198 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:65205 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65220 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65222 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:65224 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed
+INFO:     127.0.0.1:65226 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65228 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:65239 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:65245 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65257 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65269 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65256 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:65271 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:65273 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:65275 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:65285 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65290 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65293 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65296 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65299 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65302 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65305 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65310 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65313 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65316 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65319 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65324 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65327 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65330 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65333 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65337 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65340 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65343 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65346 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:65359 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65362 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65365 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65368 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65371 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65374 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65377 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65380 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65383 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65386 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65389 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65392 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65351 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65401 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65403 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:65422 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65467 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:65470 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     127.0.0.1:65487 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65471 - "GET /api/analysis HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:65491 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:65495 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65498 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     connection closed
+INFO:     127.0.0.1:65509 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65512 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65515 - "POST /api/simulate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65517 - "WebSocket /ws/analysis" [accepted]
+INFO:     connection open
+INFO:     connection closed

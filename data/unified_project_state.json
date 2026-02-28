@@ -1,0 +1,1200 @@
+{
+  "metadata": {
+    "project_id": "proj_meridian",
+    "project_name": "Meridian",
+    "kickoff_date": "2026-02-06T20:46:23.802136Z",
+    "deadline_date": "2026-03-20T20:46:23.802136Z",
+    "simulated_now": "2026-02-26T20:46:23.802136Z"
+  },
+  "sprints": [
+    {
+      "sprint_id": "sprint_1",
+      "start_date": "2026-02-06T20:46:23.802136Z",
+      "end_date": "2026-02-20T20:46:23.802136Z"
+    },
+    {
+      "sprint_id": "sprint_2",
+      "start_date": "2026-02-20T20:46:23.802136Z",
+      "end_date": "2026-03-06T20:46:23.802136Z"
+    },
+    {
+      "sprint_id": "sprint_3",
+      "start_date": "2026-03-06T20:46:23.802136Z",
+      "end_date": "2026-03-20T20:46:23.802136Z"
+    }
+  ],
+  "developers": [
+    {
+      "dev_id": "dev_1",
+      "name": "Alice Manager",
+      "role": "manager"
+    },
+    {
+      "dev_id": "dev_2",
+      "name": "Bob Lead",
+      "role": "lead"
+    },
+    {
+      "dev_id": "dev_3",
+      "name": "Charlie Dev",
+      "role": "developer"
+    },
+    {
+      "dev_id": "dev_4",
+      "name": "Diana Dev",
+      "role": "developer"
+    },
+    {
+      "dev_id": "dev_5",
+      "name": "Eve Dev",
+      "role": "developer"
+    },
+    {
+      "dev_id": "dev_6",
+      "name": "Frank Dev",
+      "role": "developer"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "task_1",
+      "title": "Task 1",
+      "status": "blocked",
+      "assigned_to": "dev_1",
+      "created_at": "2026-02-15T14:07:11.802136Z",
+      "updated_at": "2026-02-17T16:27:44.802136Z",
+      "due_date": "2026-03-09T06:27:19.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_2",
+      "title": "Task 2",
+      "status": "blocked",
+      "assigned_to": "dev_1",
+      "created_at": "2026-02-18T00:18:25.802136Z",
+      "updated_at": "2026-02-22T15:13:06.802136Z",
+      "due_date": "2026-02-25T23:54:13.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_3",
+      "title": "Task 3",
+      "status": "blocked",
+      "assigned_to": "dev_3",
+      "created_at": "2026-02-07T15:25:46.802136Z",
+      "updated_at": "2026-02-20T00:06:42.802136Z",
+      "due_date": "2026-02-18T10:15:47.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_4",
+      "title": "Task 4",
+      "status": "blocked",
+      "assigned_to": "dev_4",
+      "created_at": "2026-02-08T07:21:04.802136Z",
+      "updated_at": "2026-02-16T19:05:56.802136Z",
+      "due_date": "2026-02-22T06:58:48.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_5",
+      "title": "Task 5",
+      "status": "blocked",
+      "assigned_to": "dev_5",
+      "created_at": "2026-02-09T15:47:01.802136Z",
+      "updated_at": "2026-02-17T12:26:28.802136Z",
+      "due_date": "2026-03-12T16:25:39.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_6",
+      "title": "Task 6",
+      "status": "blocked",
+      "assigned_to": "dev_6",
+      "created_at": "2026-02-07T20:01:47.802136Z",
+      "updated_at": "2026-02-22T20:46:27.802136Z",
+      "due_date": "2026-02-15T02:31:38.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_7",
+      "title": "Task 7",
+      "status": "blocked",
+      "assigned_to": "dev_2",
+      "created_at": "2026-02-07T04:41:47.802136Z",
+      "updated_at": "2026-02-07T18:34:54.802136Z",
+      "due_date": "2026-02-20T05:37:31.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_8",
+      "title": "Task 8",
+      "status": "done",
+      "assigned_to": "dev_3",
+      "created_at": "2026-02-07T07:54:30.802136Z",
+      "updated_at": "2026-02-16T06:59:14.802136Z",
+      "due_date": "2026-02-20T10:08:20.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_9",
+      "title": "Task 9",
+      "status": "done",
+      "assigned_to": "dev_4",
+      "created_at": "2026-02-12T06:20:57.802136Z",
+      "updated_at": "2026-02-24T11:01:50.802136Z",
+      "due_date": "2026-03-02T13:24:14.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_10",
+      "title": "Task 10",
+      "status": "done",
+      "assigned_to": "dev_3",
+      "created_at": "2026-02-20T01:17:07.802136Z",
+      "updated_at": "2026-02-26T00:54:31.802136Z",
+      "due_date": "2026-03-13T02:31:30.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_11",
+      "title": "Task 11",
+      "status": "done",
+      "assigned_to": "dev_4",
+      "created_at": "2026-02-14T19:11:24.802136Z",
+      "updated_at": "2026-02-18T06:57:35.802136Z",
+      "due_date": "2026-03-04T00:39:45.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_12",
+      "title": "Task 12",
+      "status": "done",
+      "assigned_to": "dev_4",
+      "created_at": "2026-02-07T11:48:43.802136Z",
+      "updated_at": "2026-02-18T09:27:24.802136Z",
+      "due_date": "2026-02-08T11:48:43.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_13",
+      "title": "Task 13",
+      "status": "done",
+      "assigned_to": "dev_5",
+      "created_at": "2026-02-13T08:46:34.802136Z",
+      "updated_at": "2026-02-15T21:36:23.802136Z",
+      "due_date": "2026-02-27T13:53:37.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [
+        "task_7"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_14",
+      "title": "Task 14",
+      "status": "done",
+      "assigned_to": "dev_5",
+      "created_at": "2026-02-13T07:09:40.802136Z",
+      "updated_at": "2026-02-16T13:24:28.802136Z",
+      "due_date": "2026-03-13T13:12:18.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [
+        "task_6"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_15",
+      "title": "Task 15",
+      "status": "done",
+      "assigned_to": "dev_6",
+      "created_at": "2026-02-12T23:41:04.802136Z",
+      "updated_at": "2026-02-17T17:31:41.802136Z",
+      "due_date": "2026-03-10T14:29:33.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [
+        "task_5"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_16",
+      "title": "Task 16",
+      "status": "done",
+      "assigned_to": "dev_5",
+      "created_at": "2026-02-20T09:54:49.802136Z",
+      "updated_at": "2026-02-22T09:58:01.802136Z",
+      "due_date": "2026-03-10T01:00:28.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [
+        "task_31"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_17",
+      "title": "Task 17",
+      "status": "done",
+      "assigned_to": "dev_3",
+      "created_at": "2026-02-15T06:03:12.802136Z",
+      "updated_at": "2026-02-26T03:36:41.802136Z",
+      "due_date": "2026-03-03T04:39:07.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_18",
+      "title": "Task 18",
+      "status": "in_progress",
+      "assigned_to": "dev_2",
+      "created_at": "2026-02-13T05:07:31.802136Z",
+      "updated_at": "2026-02-22T07:06:47.802136Z",
+      "due_date": "2026-03-13T14:42:11.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_19",
+      "title": "Task 19",
+      "status": "in_progress",
+      "assigned_to": "dev_2",
+      "created_at": "2026-02-19T00:51:07.802136Z",
+      "updated_at": "2026-02-22T08:38:45.802136Z",
+      "due_date": "2026-03-11T21:37:43.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_20",
+      "title": "Task 20",
+      "status": "in_progress",
+      "assigned_to": "dev_2",
+      "created_at": "2026-02-07T02:52:28.802136Z",
+      "updated_at": "2026-02-07T23:30:10.802136Z",
+      "due_date": "2026-02-18T19:37:42.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_18"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_21",
+      "title": "Task 21",
+      "status": "in_progress",
+      "assigned_to": "dev_2",
+      "created_at": "2026-02-13T06:44:49.802136Z",
+      "updated_at": "2026-02-16T18:53:24.802136Z",
+      "due_date": "2026-02-23T15:47:10.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [
+        "task_7"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_22",
+      "title": "Task 22",
+      "status": "in_progress",
+      "assigned_to": "dev_2",
+      "created_at": "2026-02-06T23:03:53.802136Z",
+      "updated_at": "2026-02-08T23:22:12.802136Z",
+      "due_date": "2026-02-17T13:07:59.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_3",
+        "task_32"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_23",
+      "title": "Task 23",
+      "status": "in_progress",
+      "assigned_to": null,
+      "created_at": "2026-02-06T23:56:26.802136Z",
+      "updated_at": "2026-02-12T01:49:00.802136Z",
+      "due_date": "2026-02-19T06:54:15.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_7"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_24",
+      "title": "Task 24",
+      "status": "in_progress",
+      "assigned_to": null,
+      "created_at": "2026-02-07T09:38:57.802136Z",
+      "updated_at": "2026-02-08T04:23:39.802136Z",
+      "due_date": "2026-03-10T18:39:09.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [
+        "task_18"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_25",
+      "title": "Task 25",
+      "status": "in_progress",
+      "assigned_to": null,
+      "created_at": "2026-02-07T00:30:17.802136Z",
+      "updated_at": "2026-02-07T15:41:33.802136Z",
+      "due_date": "2026-02-08T16:04:55.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_19",
+        "task_18"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_26",
+      "title": "Task 26",
+      "status": "in_progress",
+      "assigned_to": "dev_4",
+      "created_at": "2026-02-08T13:50:31.802136Z",
+      "updated_at": "2026-02-12T07:51:30.802136Z",
+      "due_date": "2026-02-26T16:10:58.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [
+        "task_19",
+        "task_24"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_27",
+      "title": "Task 27",
+      "status": "in_progress",
+      "assigned_to": "dev_3",
+      "created_at": "2026-02-14T22:03:02.802136Z",
+      "updated_at": "2026-02-19T23:11:42.802136Z",
+      "due_date": "2026-02-24T22:43:27.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [
+        "task_2",
+        "task_19",
+        "task_22"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_28",
+      "title": "Task 28",
+      "status": "in_progress",
+      "assigned_to": "dev_3",
+      "created_at": "2026-02-06T22:20:03.802136Z",
+      "updated_at": "2026-02-16T16:53:24.802136Z",
+      "due_date": "2026-02-08T23:11:34.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_18"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_29",
+      "title": "Task 29",
+      "status": "in_progress",
+      "assigned_to": "dev_4",
+      "created_at": "2026-02-12T18:49:39.802136Z",
+      "updated_at": "2026-02-14T19:33:03.802136Z",
+      "due_date": "2026-03-14T05:18:52.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [
+        "task_13"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_30",
+      "title": "Task 30",
+      "status": "in_progress",
+      "assigned_to": "dev_4",
+      "created_at": "2026-02-10T16:24:59.802136Z",
+      "updated_at": "2026-02-13T22:34:45.802136Z",
+      "due_date": "2026-02-21T21:08:59.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [
+        "task_26"
+      ],
+      "is_baseline": true
+    },
+    {
+      "task_id": "task_31",
+      "title": "Task 31",
+      "status": "in_progress",
+      "assigned_to": "dev_5",
+      "created_at": "2026-02-21T00:00:00.000Z",
+      "updated_at": "2026-02-15T22:22:18.802136Z",
+      "due_date": "2026-02-13T18:23:33.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [
+        "task_20"
+      ],
+      "is_baseline": false
+    },
+    {
+      "task_id": "task_32",
+      "title": "Task 32",
+      "status": "in_progress",
+      "assigned_to": "dev_3",
+      "created_at": "2026-02-21T00:00:00.000Z",
+      "updated_at": "2026-02-12T07:08:47.802136Z",
+      "due_date": "2026-02-10T02:03:04.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [
+        "task_29"
+      ],
+      "is_baseline": false
+    },
+    {
+      "task_id": "task_33",
+      "title": "Task 33",
+      "status": "todo",
+      "assigned_to": "dev_6",
+      "created_at": "2026-02-21T00:00:00.000Z",
+      "updated_at": "2026-02-14T12:07:45.802136Z",
+      "due_date": "2026-02-08T19:04:49.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [
+        "task_4",
+        "task_7"
+      ],
+      "is_baseline": false
+    },
+    {
+      "task_id": "task_34",
+      "title": "Task 34",
+      "status": "todo",
+      "assigned_to": "dev_6",
+      "created_at": "2026-02-11T02:51:50.802136Z",
+      "updated_at": "2026-02-21T13:08:39.802136Z",
+      "due_date": "2026-02-17T09:05:08.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_6"
+      ],
+      "is_baseline": false
+    },
+    {
+      "task_id": "task_35",
+      "title": "Task 35",
+      "status": "todo",
+      "assigned_to": "dev_3",
+      "created_at": "2026-02-11T10:34:23.802136Z",
+      "updated_at": "2026-02-17T14:56:00.802136Z",
+      "due_date": "2026-02-12T10:34:23.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_5"
+      ],
+      "is_baseline": false
+    },
+    {
+      "task_id": "task_36",
+      "title": "Task 36",
+      "status": "todo",
+      "assigned_to": "dev_4",
+      "created_at": "2026-02-08T05:22:14.802136Z",
+      "updated_at": "2026-02-13T23:36:36.802136Z",
+      "due_date": "2026-02-15T04:08:05.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_33"
+      ],
+      "is_baseline": false
+    },
+    {
+      "task_id": "task_37",
+      "title": "Task 37",
+      "status": "todo",
+      "assigned_to": "dev_6",
+      "created_at": "2026-02-09T17:11:39.802136Z",
+      "updated_at": "2026-02-21T13:27:02.802136Z",
+      "due_date": "2026-02-10T12:26:24.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_34"
+      ],
+      "is_baseline": false
+    },
+    {
+      "task_id": "task_38",
+      "title": "Task 38",
+      "status": "todo",
+      "assigned_to": "dev_4",
+      "created_at": "2026-02-08T01:55:28.802136Z",
+      "updated_at": "2026-02-19T20:32:21.802136Z",
+      "due_date": "2026-02-16T09:00:30.802136Z",
+      "sprint_id": "sprint_1",
+      "depends_on": [
+        "task_36"
+      ],
+      "is_baseline": false
+    },
+    {
+      "task_id": "task_39",
+      "title": "Task 39",
+      "status": "todo",
+      "assigned_to": "dev_5",
+      "created_at": "2026-02-15T12:49:35.802136Z",
+      "updated_at": "2026-02-17T14:17:28.802136Z",
+      "due_date": "2026-03-09T15:33:30.802136Z",
+      "sprint_id": "sprint_3",
+      "depends_on": [
+        "task_35"
+      ],
+      "is_baseline": false
+    },
+    {
+      "task_id": "task_40",
+      "title": "Task 40",
+      "status": "todo",
+      "assigned_to": "dev_6",
+      "created_at": "2026-02-14T17:05:06.802136Z",
+      "updated_at": "2026-02-14T23:05:12.802136Z",
+      "due_date": "2026-02-28T13:37:59.802136Z",
+      "sprint_id": "sprint_2",
+      "depends_on": [
+        "task_37"
+      ],
+      "is_baseline": false
+    }
+  ],
+  "pull_requests": [
+    {
+      "pr_id": "pr_1",
+      "task_id": "task_28",
+      "author_id": "dev_3",
+      "created_at": "2026-02-09T03:54:47.802136Z",
+      "merged_at": null,
+      "status": "open"
+    },
+    {
+      "pr_id": "pr_2",
+      "task_id": null,
+      "author_id": "dev_1",
+      "created_at": "2026-02-18T13:30:58.802136Z",
+      "merged_at": null,
+      "status": "open"
+    },
+    {
+      "pr_id": "pr_3",
+      "task_id": "task_30",
+      "author_id": "dev_2",
+      "created_at": "2026-02-07T03:49:43.802136Z",
+      "merged_at": null,
+      "status": "open"
+    },
+    {
+      "pr_id": "pr_4",
+      "task_id": null,
+      "author_id": "dev_3",
+      "created_at": "2026-02-18T20:19:41.802136Z",
+      "merged_at": null,
+      "status": "open"
+    },
+    {
+      "pr_id": "pr_5",
+      "task_id": "task_9",
+      "author_id": "dev_2",
+      "created_at": "2026-02-15T00:57:35.802136Z",
+      "merged_at": null,
+      "status": "open"
+    },
+    {
+      "pr_id": "pr_6",
+      "task_id": "task_37",
+      "author_id": "dev_4",
+      "created_at": "2026-02-21T21:49:39.802136Z",
+      "merged_at": "2026-02-22T15:19:32.802136Z",
+      "status": "merged"
+    },
+    {
+      "pr_id": "pr_7",
+      "task_id": "task_32",
+      "author_id": "dev_1",
+      "created_at": "2026-02-09T00:58:46.802136Z",
+      "merged_at": "2026-02-19T20:20:06.802136Z",
+      "status": "merged"
+    },
+    {
+      "pr_id": "pr_8",
+      "task_id": "task_5",
+      "author_id": "dev_4",
+      "created_at": "2026-02-08T12:54:19.802136Z",
+      "merged_at": "2026-02-10T12:22:09.802136Z",
+      "status": "merged"
+    },
+    {
+      "pr_id": "pr_9",
+      "task_id": "task_38",
+      "author_id": "dev_5",
+      "created_at": "2026-02-13T10:14:57.802136Z",
+      "merged_at": "2026-02-24T00:22:47.802136Z",
+      "status": "merged"
+    },
+    {
+      "pr_id": "pr_10",
+      "task_id": "task_35",
+      "author_id": "dev_2",
+      "created_at": "2026-02-12T16:24:50.802136Z",
+      "merged_at": "2026-02-16T02:17:12.802136Z",
+      "status": "merged"
+    },
+    {
+      "pr_id": "pr_11",
+      "task_id": "task_21",
+      "author_id": "dev_6",
+      "created_at": "2026-02-16T10:17:19.802136Z",
+      "merged_at": "2026-02-26T13:49:56.802136Z",
+      "status": "merged"
+    },
+    {
+      "pr_id": "pr_12",
+      "task_id": "task_5",
+      "author_id": "dev_1",
+      "created_at": "2026-02-20T03:03:21.802136Z",
+      "merged_at": "2026-02-25T10:46:18.802136Z",
+      "status": "merged"
+    },
+    {
+      "pr_id": "pr_13",
+      "task_id": "task_13",
+      "author_id": "dev_5",
+      "created_at": "2026-02-14T08:51:45.802136Z",
+      "merged_at": "2026-02-24T14:23:14.802136Z",
+      "status": "merged"
+    },
+    {
+      "pr_id": "pr_14",
+      "task_id": "task_21",
+      "author_id": "dev_3",
+      "created_at": "2026-02-09T18:35:36.802136Z",
+      "merged_at": "2026-02-21T09:43:36.802136Z",
+      "status": "merged"
+    },
+    {
+      "pr_id": "pr_15",
+      "task_id": "task_2",
+      "author_id": "dev_6",
+      "created_at": "2026-02-24T22:15:02.802136Z",
+      "merged_at": "2026-02-25T23:59:19.802136Z",
+      "status": "merged"
+    }
+  ],
+  "messages": [
+    {
+      "message_id": "msg_1",
+      "user_id": "dev_1",
+      "timestamp": "2026-02-24T00:00:00.000Z",
+      "thread_id": "thread_1",
+      "reply_to_id": null,
+      "contains_trigger_word": true
+    },
+    {
+      "message_id": "msg_2",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-24T00:00:00.000Z",
+      "thread_id": "thread_2",
+      "reply_to_id": null,
+      "contains_trigger_word": true
+    },
+    {
+      "message_id": "msg_3",
+      "user_id": "dev_3",
+      "timestamp": "2026-02-24T00:00:00.000Z",
+      "thread_id": "thread_3",
+      "reply_to_id": null,
+      "contains_trigger_word": true
+    },
+    {
+      "message_id": "msg_4",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-24T00:00:00.000Z",
+      "thread_id": "thread_4",
+      "reply_to_id": null,
+      "contains_trigger_word": true
+    },
+    {
+      "message_id": "msg_5",
+      "user_id": "dev_3",
+      "timestamp": "2026-02-14T08:53:16.802136Z",
+      "thread_id": "thread_5",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_6",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-14T14:39:12.802136Z",
+      "thread_id": "thread_6",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_7",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-14T16:39:12.802136Z",
+      "thread_id": "thread_6",
+      "reply_to_id": "msg_6",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_8",
+      "user_id": "dev_6",
+      "timestamp": "2026-02-14T18:39:12.802136Z",
+      "thread_id": "thread_6",
+      "reply_to_id": "msg_7",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_9",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-14T20:39:12.802136Z",
+      "thread_id": "thread_6",
+      "reply_to_id": "msg_8",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_10",
+      "user_id": "dev_1",
+      "timestamp": "2026-02-13T15:28:56.802136Z",
+      "thread_id": "thread_7",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_11",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-13T17:28:56.802136Z",
+      "thread_id": "thread_7",
+      "reply_to_id": "msg_10",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_12",
+      "user_id": "dev_1",
+      "timestamp": "2026-02-13T19:28:56.802136Z",
+      "thread_id": "thread_7",
+      "reply_to_id": "msg_11",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_13",
+      "user_id": "dev_3",
+      "timestamp": "2026-02-13T21:28:56.802136Z",
+      "thread_id": "thread_7",
+      "reply_to_id": "msg_12",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_14",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-17T03:34:57.802136Z",
+      "thread_id": "thread_8",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_15",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-17T05:34:57.802136Z",
+      "thread_id": "thread_8",
+      "reply_to_id": "msg_14",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_16",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-17T07:34:57.802136Z",
+      "thread_id": "thread_8",
+      "reply_to_id": "msg_15",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_17",
+      "user_id": "dev_6",
+      "timestamp": "2026-02-17T09:34:57.802136Z",
+      "thread_id": "thread_8",
+      "reply_to_id": "msg_16",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_18",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-12T09:00:10.802136Z",
+      "thread_id": "thread_9",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_19",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-12T11:00:10.802136Z",
+      "thread_id": "thread_9",
+      "reply_to_id": "msg_18",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_20",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-12T13:00:10.802136Z",
+      "thread_id": "thread_9",
+      "reply_to_id": "msg_19",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_21",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-12T15:00:10.802136Z",
+      "thread_id": "thread_9",
+      "reply_to_id": "msg_20",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_22",
+      "user_id": "dev_3",
+      "timestamp": "2026-02-13T19:19:47.802136Z",
+      "thread_id": "thread_10",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_23",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-13T21:19:47.802136Z",
+      "thread_id": "thread_10",
+      "reply_to_id": "msg_22",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_24",
+      "user_id": "dev_3",
+      "timestamp": "2026-02-13T23:19:47.802136Z",
+      "thread_id": "thread_10",
+      "reply_to_id": "msg_23",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_25",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-14T01:19:47.802136Z",
+      "thread_id": "thread_10",
+      "reply_to_id": "msg_24",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_26",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-17T11:27:32.802136Z",
+      "thread_id": "thread_11",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_27",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-17T13:27:32.802136Z",
+      "thread_id": "thread_11",
+      "reply_to_id": "msg_26",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_28",
+      "user_id": "dev_6",
+      "timestamp": "2026-02-17T15:27:32.802136Z",
+      "thread_id": "thread_11",
+      "reply_to_id": "msg_27",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_29",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-17T17:27:32.802136Z",
+      "thread_id": "thread_11",
+      "reply_to_id": "msg_28",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_30",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-13T12:59:07.802136Z",
+      "thread_id": "thread_12",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_31",
+      "user_id": "dev_6",
+      "timestamp": "2026-02-13T14:59:07.802136Z",
+      "thread_id": "thread_12",
+      "reply_to_id": "msg_30",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_32",
+      "user_id": "dev_1",
+      "timestamp": "2026-02-13T16:59:07.802136Z",
+      "thread_id": "thread_12",
+      "reply_to_id": "msg_31",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_33",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-13T18:59:07.802136Z",
+      "thread_id": "thread_12",
+      "reply_to_id": "msg_32",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_34",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-19T11:16:11.802136Z",
+      "thread_id": "thread_13",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_35",
+      "user_id": "dev_3",
+      "timestamp": "2026-02-19T13:16:11.802136Z",
+      "thread_id": "thread_13",
+      "reply_to_id": "msg_34",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_36",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-19T15:16:11.802136Z",
+      "thread_id": "thread_13",
+      "reply_to_id": "msg_35",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_37",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-19T17:16:11.802136Z",
+      "thread_id": "thread_13",
+      "reply_to_id": "msg_36",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_38",
+      "user_id": "dev_3",
+      "timestamp": "2026-02-13T17:46:56.802136Z",
+      "thread_id": "thread_14",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_39",
+      "user_id": "dev_1",
+      "timestamp": "2026-02-13T19:46:56.802136Z",
+      "thread_id": "thread_14",
+      "reply_to_id": "msg_38",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_40",
+      "user_id": "dev_6",
+      "timestamp": "2026-02-13T21:46:56.802136Z",
+      "thread_id": "thread_14",
+      "reply_to_id": "msg_39",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_41",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-13T23:46:56.802136Z",
+      "thread_id": "thread_14",
+      "reply_to_id": "msg_40",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_42",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-19T18:13:33.802136Z",
+      "thread_id": "thread_15",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_43",
+      "user_id": "dev_3",
+      "timestamp": "2026-02-19T20:13:33.802136Z",
+      "thread_id": "thread_15",
+      "reply_to_id": "msg_42",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_44",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-19T22:13:33.802136Z",
+      "thread_id": "thread_15",
+      "reply_to_id": "msg_43",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_45",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-20T00:13:33.802136Z",
+      "thread_id": "thread_15",
+      "reply_to_id": "msg_44",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_46",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-14T09:12:05.802136Z",
+      "thread_id": "thread_16",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_47",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-14T11:12:05.802136Z",
+      "thread_id": "thread_16",
+      "reply_to_id": "msg_46",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_48",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-14T13:12:05.802136Z",
+      "thread_id": "thread_16",
+      "reply_to_id": "msg_47",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_49",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-23T04:04:50.802136Z",
+      "thread_id": "thread_17",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_50",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-23T06:04:50.802136Z",
+      "thread_id": "thread_17",
+      "reply_to_id": "msg_49",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_51",
+      "user_id": "dev_6",
+      "timestamp": "2026-02-23T08:04:50.802136Z",
+      "thread_id": "thread_17",
+      "reply_to_id": "msg_50",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_52",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-08T10:53:40.802136Z",
+      "thread_id": "thread_18",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_53",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-08T12:53:40.802136Z",
+      "thread_id": "thread_18",
+      "reply_to_id": "msg_52",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_54",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-08T14:53:40.802136Z",
+      "thread_id": "thread_18",
+      "reply_to_id": "msg_53",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_55",
+      "user_id": "dev_3",
+      "timestamp": "2026-02-19T02:35:36.802136Z",
+      "thread_id": "thread_19",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_56",
+      "user_id": "dev_5",
+      "timestamp": "2026-02-19T04:35:36.802136Z",
+      "thread_id": "thread_19",
+      "reply_to_id": "msg_55",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_57",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-19T06:35:36.802136Z",
+      "thread_id": "thread_19",
+      "reply_to_id": "msg_56",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_58",
+      "user_id": "dev_4",
+      "timestamp": "2026-02-11T10:26:24.802136Z",
+      "thread_id": "thread_20",
+      "reply_to_id": null,
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_59",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-11T12:26:24.802136Z",
+      "thread_id": "thread_20",
+      "reply_to_id": "msg_58",
+      "contains_trigger_word": false
+    },
+    {
+      "message_id": "msg_60",
+      "user_id": "dev_2",
+      "timestamp": "2026-02-11T14:26:24.802136Z",
+      "thread_id": "thread_20",
+      "reply_to_id": "msg_59",
+      "contains_trigger_word": false
+    }
+  ]
+}
