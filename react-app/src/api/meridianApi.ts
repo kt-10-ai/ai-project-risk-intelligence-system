@@ -1,8 +1,11 @@
 // Meridian API Client — TypeScript port of meridian-api.js
 // Backend: REST http://localhost:8000 | WS ws://localhost:8000/ws/analysis
 
-const BASE = '/api';
-const WS_URL = `ws://${window.location.hostname}:8000/ws/analysis`;
+const API_URL = (import.meta.env.VITE_API_URL as string | undefined) ?? '';
+const BASE = API_URL ? `${API_URL}/api` : '/api';
+const WS_URL = API_URL
+    ? `${API_URL.replace(/^http/, 'ws')}/ws/analysis`
+    : `ws://${window.location.hostname}:8000/ws/analysis`;
 
 // ── Types ─────────────────────────────────────────────────────────────────
 
