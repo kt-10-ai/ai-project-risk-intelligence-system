@@ -7,10 +7,15 @@ from api.websocket import ws_router
 app = FastAPI(title="Meridian Risk Intelligence")
 
 allowed_origin = os.getenv("ALLOWED_ORIGIN", "*")
+origins = [
+    allowed_origin,
+    "https://ai-project-risk-intelligence-system.vercel.app",
+    "https://meridian-risk.vercel.app",
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[allowed_origin],
+    allow_origins=origins if allowed_origin != "*" else ["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )

@@ -29,6 +29,8 @@ async def websocket_analysis(websocket: WebSocket):
         not origin
         or allowed_origin == "*"
         or origin == allowed_origin
+        or origin == "https://ai-project-risk-intelligence-system.vercel.app"
+        or origin == "https://meridian-risk.vercel.app"
         or origin.startswith("http://localhost")
         or origin.startswith("http://127.0.0.1")
     )
