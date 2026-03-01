@@ -20,13 +20,19 @@ def get_data_path() -> Path:
 
 @ws_router.websocket("/ws/analysis")
 async def websocket_analysis(websocket: WebSocket):
-    # CORSMiddleware does not cover WebSocket upgrades — check origin manually
+    # Check origin against ALLOWED_ORIGIN
+    import os
+    allowed_origin = os.getenv("ALLOWED_ORIGIN", "*")
     origin = websocket.headers.get("origin", "")
+    
     allowed = (
-        not origin  # no origin header (e.g. curl / Postman)
+        not origin
+        or allowed_origin == "*"
+        or origin == allowed_origin
         or origin.startswith("http://localhost")
         or origin.startswith("http://127.0.0.1")
     )
+    
     if not allowed:
         await websocket.close(code=1008)
         return
