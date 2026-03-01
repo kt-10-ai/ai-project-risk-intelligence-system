@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor
 from core.signal_extractor import extract_signals
 from core.risk_formula import compute_risk_score
 from core.whatif_engine import run_simulation as run_whatif_simulation
+from core.monte_carlo import run_monte_carlo
 
 from agents import dependency_agent
 from agents import workload_agent
@@ -59,7 +60,11 @@ async def run_full_analysis(data: dict) -> dict:
         "timestamp": data.get("metadata", {}).get("simulated_now", ""),
         "formula_version": "1.0"
     }
-    
+
+    # Run Monte Carlo analysis
+    mc_result = run_monte_carlo(signals)
+    final_output['monte_carlo'] = mc_result
+
     return final_output
 
 def run_simulation(data: dict, mutation: dict) -> dict:

@@ -5,11 +5,15 @@ from fastapi import APIRouter, HTTPException
 
 from api.schemas import MutationRequest, RiskAnalysisResponse, SimulationResponse
 from agents import supervisor_agent
+from core.signal_extractor import extract_signals
+from core.monte_carlo import run_monte_carlo
 
 router = APIRouter()
 
+DATA_PATH = Path(__file__).parent.parent / "data" / "unified_project_state.json"
+
 def get_data_path() -> Path:
-    return Path(__file__).parent.parent / "data" / "unified_project_state.json"
+    return DATA_PATH
 
 @router.get("/api/health")
 def health_check():
@@ -55,3 +59,14 @@ def simulate(request: MutationRequest):
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail="Simulation failed.")
+
+@router.get("/api/monte-carlo")
+async def monte_carlo_endpoint():
+    try:
+        with open(DATA_PATH) as f:
+            data = json.load(f)
+        signals = extract_signals(data)
+        result = run_monte_carlo(signals, n_simulations=10000)
+        return result
+    except Exception as e:
+        return {"error": str(e)}

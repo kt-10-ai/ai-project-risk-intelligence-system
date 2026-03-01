@@ -5,6 +5,7 @@ import RiskBar from '../components/RiskBar';
 import { simulate } from '../api/meridianApi';
 import { showToast } from '../hooks/useToast';
 import { useRisk } from '../context/RiskContext';
+import { exportMitigationPlanPDF } from '../utils/pdfGenerator';
 
 const STATIC_STEPS = [
     { priority: 'IMMEDIATE', icon: 'hub', title: 'Unblock task_7 (Critical Hub)', detail: 'Assign +2 senior engineers from Platform team. Decouple task_112 by parallelizing subtasks.', impact: -18, effort: 'High' },
@@ -22,7 +23,6 @@ export default function DependencyPage() {
     const [modalOpen, setModalOpen] = useState(false);
     const [generating, setGenerating] = useState(false);
     const [planScore, setPlanScore] = useState<{ current: number; projected: number; level: string } | null>(null);
-    const [planText, setPlanText] = useState('');
 
     async function generateMitigationPlan() {
         setGenerating(true);
@@ -37,7 +37,7 @@ export default function DependencyPage() {
             const totalImpact = STATIC_STEPS.reduce((s, st) => s + st.impact, 0);
             const projected = Math.max(0, score + totalImpact);
             setPlanScore({ current: score, projected, level });
-            setPlanText(`MERIDIAN MITIGATION PLAN\nGenerated: ${new Date().toUTCString()}\nCurrent Score: ${score.toFixed(1)} → Projected: ${projected.toFixed(1)}\n\n${STATIC_STEPS.map(s => `[${s.priority}] ${s.title}\n${s.detail}\nImpact: ${s.impact} pts | Effort: ${s.effort}`).join('\n\n')}`);
+
         } catch {
             showToast('Backend offline — showing static plan', '#f59e0b');
             setPlanScore({ current: 75, projected: 29, level: 'HIGH' });
@@ -46,9 +46,7 @@ export default function DependencyPage() {
     }
 
     function downloadPlan() {
-        const blob = new Blob([planText || 'No plan generated yet.'], { type: 'text/plain' });
-        const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
-        a.download = 'Meridian-Mitigation-Plan.txt'; a.click();
+        exportMitigationPlanPDF(planScore, STATIC_STEPS);
     }
 
     async function handleActionCard(title: string) {
@@ -286,8 +284,9 @@ export default function DependencyPage() {
                         )}
 
                         <div className="mt-7 flex gap-3">
-                            <button onClick={downloadPlan} className="flex-1 py-3 bg-[#6764f2] text-white font-bold text-sm rounded-lg hover:bg-[#5451e0] transition-colors uppercase tracking-wider">
-                                ⬇ Download Plan
+                            <button onClick={downloadPlan} className="flex-1 py-3 bg-[#6764f2] text-white font-bold text-sm rounded-lg hover:bg-[#5451e0] transition-colors uppercase tracking-wider flex items-center justify-center gap-2">
+                                <span className="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+                                Download PDF
                             </button>
                             <button onClick={() => setModalOpen(false)} className="px-5 py-3 bg-[#1e1e2d] border border-[#2d2d3d] text-slate-400 font-semibold text-sm rounded-lg hover:bg-[#2d2d3d] transition-colors">
                                 Dismiss

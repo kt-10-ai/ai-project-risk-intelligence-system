@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import Layout from '../components/Layout';
 import RiskBadge from '../components/RiskBadge';
 import { simulate } from '../api/meridianApi';
 import type { SimulationMutation, SimulationResult } from '../api/meridianApi';
+import MonteCarloPanel from '../components/MonteCarloPanel';
 
 interface SliderConfig {
     id: string;
@@ -64,7 +65,11 @@ export default function SimulationPage() {
 
     const delta = heroResult?.delta.total_score ?? 0;
     const simScore = heroResult?.simulated.total_score ?? 94.2;
-    const confidence = heroResult ? (89 + Math.random() * 5).toFixed(1) : '89.1';
+    const confidence = useMemo(
+        () => (heroResult ? (89 + Math.random() * 5).toFixed(1) : '89.1'),
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        [heroResult !== null],
+    );
     const projColor = delta < 0 ? '#22c55e' : '#ef4444';
     const dirArrow = delta < 0 ? '▼' : '▲';
 
@@ -236,7 +241,7 @@ export default function SimulationPage() {
                             All Scenarios Compared
                         </h3>
                         <a href="/report" className="text-sm font-semibold text-[#6764f2] hover:underline flex items-center gap-1">
-                            <span className="material-symbols-outlined text-[16px]">download</span>Export Full Report
+                            <span className="material-symbols-outlined text-[16px]">picture_as_pdf</span>Export PDF Report
                         </a>
                     </div>
                     <div className="overflow-x-auto">
@@ -333,6 +338,8 @@ export default function SimulationPage() {
                     ))}
                 </div>
             </section>
+
+            <MonteCarloPanel />
         </Layout>
     );
 }

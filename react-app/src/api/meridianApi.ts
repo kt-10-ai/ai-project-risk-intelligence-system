@@ -6,6 +6,21 @@ const WS_URL = `ws://${window.location.hostname}:8000/ws/analysis`;
 
 // ── Types ─────────────────────────────────────────────────────────────────
 
+export interface MonteCarloData {
+    n_simulations: number;
+    mean_score: number;
+    median_score: number;
+    std_deviation: number;
+    percentile_5: number;
+    percentile_95: number;
+    confidence_interval: { lower: number; upper: number };
+    risk_level_distribution: Record<string, number>;
+    probability_critical: number;
+    probability_above_current: number;
+    current_score: number;
+    verdict: string;
+}
+
 export interface SignalValue {
     value: number;
     score: number;
@@ -31,6 +46,7 @@ export interface RiskAnalysis {
     signals: { signals: Record<string, SignalValue>; metadata: Record<string, string> };
     timestamp: string;
     formula_version: string;
+    monte_carlo?: MonteCarloData;
 }
 
 export interface SimulationMutation {
@@ -130,6 +146,12 @@ export async function simulate(mutation: SimulationMutation): Promise<Simulation
     });
     if (!r.ok) throw new Error(`Simulation failed: ${r.status}`);
     return r.json();
+}
+
+export async function fetchMonteCarlo(): Promise<MonteCarloData> {
+    const response = await fetch(`${BASE}/monte-carlo`);
+    if (!response.ok) throw new Error('Monte Carlo fetch failed');
+    return response.json();
 }
 
 // ── WebSocket ─────────────────────────────────────────────────────────────

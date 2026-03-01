@@ -36,6 +36,7 @@ const RiskContext = createContext<RiskContextValue>({
     refresh: () => { },
     backendOnline: false,
 });
+export { RiskContext };
 
 function getRiskHex(score: number): string {
     if (score >= 0.8) return '#ef4444';
@@ -114,6 +115,7 @@ export function RiskProvider({ children }: { children: ReactNode }) {
     );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useRisk() {
     return useContext(RiskContext);
 }

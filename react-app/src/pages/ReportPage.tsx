@@ -4,6 +4,7 @@ import RiskBadge, { levelFromScore, hexFromScore } from '../components/RiskBadge
 import RiskBar from '../components/RiskBar';
 import { SIGNAL_META, toTitle } from '../api/meridianApi';
 import { useRisk } from '../context/RiskContext';
+import { exportFullReport } from '../utils/pdfGenerator';
 
 export default function ReportPage() {
     const { analysis } = useRisk();
@@ -23,15 +24,7 @@ export default function ReportPage() {
     }
 
     function handleExport() {
-        const blob = new Blob([
-            `MERIDIAN RISK INTELLIGENCE REPORT\n${date}\n\nRisk Score: ${score100.toFixed(1)}\nRisk Level: ${level}\n\n${analysis?.agents?.map(a =>
-                `${a.agent}: ${(a.risk_contribution * 100).toFixed(1)} — ${a.reasoning}`
-            ).join('\n') ?? ''}`
-        ], { type: 'text/plain' });
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = `meridian-report-${new Date().toISOString().slice(0, 10)}.txt`;
-        a.click();
+        exportFullReport(analysis);
     }
 
     return (
@@ -56,8 +49,8 @@ export default function ReportPage() {
                     </button>
                     <button onClick={handleExport}
                         className="px-4 py-2 border border-[#1e1e2d] bg-[#12121a] text-white text-sm font-bold rounded-lg hover:bg-[#1e1e2d] transition-colors flex items-center gap-2">
-                        <span className="material-symbols-outlined text-[18px]">download</span>
-                        Export
+                        <span className="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+                        Export PDF
                     </button>
                 </div>
             </div>

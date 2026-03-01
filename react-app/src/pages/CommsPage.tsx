@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Layout from '../components/Layout';
 import { showToast } from '../hooks/useToast';
 import { useRisk } from '../context/RiskContext';
+import { exportCommsReportPDF } from '../utils/pdfGenerator';
 
 type StepState = 'pending' | 'running' | 'done';
 
@@ -50,18 +51,12 @@ export default function CommsPage() {
     }
 
     async function exportAnalysis() {
-        showToast('Exporting analysis data…', '#6764f2');
+        showToast('Generating PDF report…', '#6764f2');
         try {
-            const data = analysis;
-            if (!data) throw new Error('no data');
-            const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
-            const url = URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.href = url; a.download = 'meridian-comms-analysis.json'; a.click();
-            URL.revokeObjectURL(url);
-            showToast('✓ Analysis exported as JSON', '#22c55e');
+            exportCommsReportPDF(analysis);
+            showToast('✓ PDF report opened — use browser Print to save', '#22c55e');
         } catch {
-            showToast('Backend offline — cannot export', '#ef4444');
+            showToast('Failed to generate PDF report', '#ef4444');
         }
     }
 
@@ -100,7 +95,7 @@ export default function CommsPage() {
                 <div className="flex gap-3">
                     <button onClick={exportAnalysis}
                         className="px-4 py-2 rounded-lg border border-[#1e1e2d] text-slate-300 font-semibold text-sm hover:bg-white/5 transition-all flex items-center gap-2">
-                        <span className="material-symbols-outlined text-lg">download</span> Export Analysis
+                        <span className="material-symbols-outlined text-lg">picture_as_pdf</span> Export PDF
                     </button>
                     <button onClick={triggerRemediation} disabled={remRunning}
                         className="px-4 py-2 rounded-lg bg-[#6764f2] text-white font-semibold text-sm hover:opacity-90 transition-all flex items-center gap-2 disabled:opacity-60">

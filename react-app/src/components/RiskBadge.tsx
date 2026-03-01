@@ -11,6 +11,7 @@ const STYLES: Record<string, string> = {
     OPTIMAL: 'bg-emerald-500/10 text-emerald-400 border border-emerald-500/20',
 };
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function levelFromScore(score100: number): Level {
     if (score100 >= 75) return 'CRITICAL';
     if (score100 >= 50) return 'WARNING';
@@ -18,6 +19,7 @@ export function levelFromScore(score100: number): Level {
     return 'HEALTHY';
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function hexFromScore(score100: number): string {
     if (score100 >= 75) return '#ef4444';
     if (score100 >= 50) return '#f59e0b';
